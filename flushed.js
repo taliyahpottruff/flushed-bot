@@ -6,7 +6,7 @@ const client = new Discord.Client();
 client.on("message", (message) => {
     const simpleMessage = message.content.toLowerCase();
 
-    if (simpleMessage.startsWith('im') || simpleMessage.startsWith('i\'m')) {
+    if (simpleMessage.startsWith('im') || simpleMessage.startsWith('i\'m') || simpleMessage.startsWith('i’m')) {
         message.react('😳');
     }
 });

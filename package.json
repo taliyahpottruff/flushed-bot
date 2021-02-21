@@ -1,0 +1,15 @@
+{
+  "name": "flushed-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "flushed.js",
+  "scripts": {
+    "dev": "nodemon flushed.js"
+  },
+  "author": "Taliyah Pottruff",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  }
+}

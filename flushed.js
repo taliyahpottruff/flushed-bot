@@ -3,10 +3,12 @@ require('dotenv').config();
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on("message", (message) => {
-    const simpleMessage = message.content.toLowerCase();
+const filter = require('./filter');
 
-    if (simpleMessage.startsWith('im') || simpleMessage.startsWith('i\'m') || simpleMessage.startsWith('i’m')) {
+client.on("message", (message) => {
+    const isFlushable = filter(message);
+
+    if (isFlushable) {
         message.react('😳');
     }
 });

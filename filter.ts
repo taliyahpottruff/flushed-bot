@@ -11,7 +11,9 @@ module.exports = (message : Discord.Message) => {
         processed.includes('youre cute') ||
         processed.includes('youre so cute') ||
         processed.includes('its so long') ||
-        processed.includes('massive mommy');
+        processed.includes('massive mommy') ||
+        processed.includes('she was like are you just going to go now or') ||
+        processed.includes('is sexy');
 
     if (filter) console.log(`(#${message.channel}) @${message.author.username}: ${processed}`);
 
